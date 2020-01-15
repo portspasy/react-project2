@@ -3,22 +3,23 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super(); // gives us access to "this.state"
+    this.state = {
+        string: 'Hello There!'
+    }
+  }
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            {this.state.string}
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <button onClick={() => this.setState({ string: 'Hello Tao!'})}>
+            Change Text
+          </button>
         </header>
       </div>
     );
