@@ -30,10 +30,7 @@ class App extends Component {
       // Similar to HTML but is JSX
       <div className="App">
         <header className="App-header">
-        <CardList name='PortSpasy'>
-          {this.state.users.map(user => (
-            <p key={user.id}>{user.name}</p>
-          ))}
+        <CardList users={this.state.users}>
         </CardList>
         </header>
       </div>
