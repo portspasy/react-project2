@@ -1,12 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import "./card-list.style.css";
+import { Card } from '../card/card.component';
+
+import './card-list.style.css';
 
 export const CardList = props => {
   return (
     <div className="card-list">
       {props.users.map(user => (
-        <p key={user.id}>{user.name}</p>
+        <Card key={user.id} user={user} />
       ))}
     </div>
   );
