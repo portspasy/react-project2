@@ -9,7 +9,8 @@ class App extends Component {
     this.state = {
       users: [
         // this will be our initial state, no more hard coding
-      ]
+      ],
+      searchField: ""
     };
   }
 
@@ -29,6 +30,7 @@ class App extends Component {
       // Similar to HTML but is JSX
       <div className="App">
         <header className="App-header">
+          <input type="search" placeholder="seach users" onChange={e => this.setState({ searchField:  e.target.value })}/>
           <CardList users={this.state.users}></CardList>
         </header>
       </div>
