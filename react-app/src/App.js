@@ -26,7 +26,19 @@ class App extends Component {
       ]
     };
   }
-
+ 
+  // API call 
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((response) => {
+          return response.json();
+      })
+      .then((myJson) => {
+          this.setState({movies: myJson});
+      });
+  }
+  
+  
   render() {
     return (
       // Similar to HTML but is JSX
