@@ -5,6 +5,7 @@ import { SearchBox } from "./components/search-box/search-box.component";
 import "./App.css";
 
 class App extends Component {
+  // The Construtor run first, before anything get called 
   constructor() {
     super(); // gives us access to "this.state"
     this.state = {
@@ -13,6 +14,14 @@ class App extends Component {
       ],
       searchField: ""
     };
+    
+    // To get 'this' that is defined in the constructor, to use in other methods 
+    this.handleChange = this.handleChange.bind(this);
+  }
+  
+  // Writing methode for later use 
+  handleChange(e) {
+    this.setState({ searchField: e.target.value })
   }
 
   // API call
@@ -39,7 +48,7 @@ class App extends Component {
         <header className="App-header">
           <SearchBox
             placeholder="seach users"
-            handleChange={e => this.setState({ searchField: e.target.value })}
+            handleChange={this.handleChange}
           />
           <CardList users={filterUsers}></CardList>
         </header>
