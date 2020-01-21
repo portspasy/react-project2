@@ -25,9 +25,12 @@
   padding: 100px 0;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 70px;
+  color: #0ccac4;
 }
+
 
 @keyframes App-logo-spin {
   from {

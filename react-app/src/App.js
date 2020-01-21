@@ -47,6 +47,7 @@ class App extends Component {
       // Similar to HTML but is JSX
       <div className="App">
         <header className="App-header">
+          <h1>User Holder</h1>
           <SearchBox
             placeholder="seach users"
             handleChange={this.handleChange}
