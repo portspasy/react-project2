@@ -5,7 +5,7 @@ import { SearchBox } from "./components/search-box/search-box.component";
 import "./App.css";
 
 class App extends Component {
-  // The Construtor run first, before anything get called 
+  // The Construtor run first, before anything get called
   constructor() {
     super(); // gives us access to "this.state"
     this.state = {
@@ -14,16 +14,16 @@ class App extends Component {
       ],
       searchField: ""
     };
-    
-    // To get 'this' that is defined in the constructor, to use in other methods 
+
+    // To get 'this' that is defined in the constructor, to use in other methods
     // shorter way, use arrow function
     // this.handleChange = this.handleChange.bind(this);
   }
-  
-  // Writing methode for later use 
-  handleChange = (e) => {
-    this.setState({ searchField: e.target.value })
-  }
+
+  // Writing methode for later use
+  handleChange = e => {
+    this.setState({ searchField: e.target.value });
+  };
 
   // API call
   componentDidMount() {
