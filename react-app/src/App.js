@@ -16,11 +16,12 @@ class App extends Component {
     };
     
     // To get 'this' that is defined in the constructor, to use in other methods 
-    this.handleChange = this.handleChange.bind(this);
+    // shorter way, use arrow function
+    // this.handleChange = this.handleChange.bind(this);
   }
   
   // Writing methode for later use 
-  handleChange(e) {
+  handleChange = (e) => {
     this.setState({ searchField: e.target.value })
   }
 
