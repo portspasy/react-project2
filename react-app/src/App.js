@@ -27,8 +27,10 @@ class App extends Component {
 
   render() {
     // Destructuring Props in React
-    const { users } = this.state;
-    console.log(users);
+    const { users, searchField } = this.state;
+    const filterUsers = users.filter(user =>
+      user.name.toLowerCase().includes(searchField.toLowerCase())
+    );
     return (
       // Similar to HTML but is JSX
       <div className="App">
@@ -38,7 +40,7 @@ class App extends Component {
             placeholder="seach users"
             onChange={e => this.setState({ searchField: e.target.value })}
           />
-          <CardList users={this.state.users}></CardList>
+          <CardList users={filterUsers}></CardList>
         </header>
       </div>
     );
