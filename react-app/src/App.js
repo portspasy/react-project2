@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import logo from './logo.svg';
 import { CardList } from "./components/card-list/card-list.component";
+import { SearchBox } from "./components/search-box/search-box.component";
 import "./App.css";
 
 class App extends Component {
@@ -31,14 +32,14 @@ class App extends Component {
     const filterUsers = users.filter(user =>
       user.name.toLowerCase().includes(searchField.toLowerCase())
     );
+
     return (
       // Similar to HTML but is JSX
       <div className="App">
         <header className="App-header">
-          <input
-            type="search"
+          <SearchBox
             placeholder="seach users"
-            onChange={e => this.setState({ searchField: e.target.value })}
+            handleChange={e => this.setState({ searchField: e.target.value })}
           />
           <CardList users={filterUsers}></CardList>
         </header>
