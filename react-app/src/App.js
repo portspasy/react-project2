@@ -26,11 +26,18 @@ class App extends Component {
   }
 
   render() {
+    // Destructuring Props in React
+    const { users } = this.state;
+    console.log(users);
     return (
       // Similar to HTML but is JSX
       <div className="App">
         <header className="App-header">
-          <input type="search" placeholder="seach users" onChange={e => this.setState({ searchField:  e.target.value })}/>
+          <input
+            type="search"
+            placeholder="seach users"
+            onChange={e => this.setState({ searchField: e.target.value })}
+          />
           <CardList users={this.state.users}></CardList>
         </header>
       </div>
