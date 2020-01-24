@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-project2/deployments/static/css/main.a0cc64f8.chunk.css",
-    "main.js": "/react-project2/deployments/static/js/main.95842cb2.chunk.js",
-    "main.js.map": "/react-project2/deployments/static/js/main.95842cb2.chunk.js.map",
-    "runtime-main.js": "/react-project2/deployments/static/js/runtime-main.81bff5ca.js",
-    "runtime-main.js.map": "/react-project2/deployments/static/js/runtime-main.81bff5ca.js.map",
-    "static/js/2.29e3f1dc.chunk.js": "/react-project2/deployments/static/js/2.29e3f1dc.chunk.js",
-    "static/js/2.29e3f1dc.chunk.js.map": "/react-project2/deployments/static/js/2.29e3f1dc.chunk.js.map",
-    "index.html": "/react-project2/deployments/index.html",
-    "precache-manifest.7ec0c9acbd24d3dc0abcda9f02ab59b0.js": "/react-project2/deployments/precache-manifest.7ec0c9acbd24d3dc0abcda9f02ab59b0.js",
-    "service-worker.js": "/react-project2/deployments/service-worker.js",
-    "static/css/main.a0cc64f8.chunk.css.map": "/react-project2/deployments/static/css/main.a0cc64f8.chunk.css.map",
-    "static/js/2.29e3f1dc.chunk.js.LICENSE": "/react-project2/deployments/static/js/2.29e3f1dc.chunk.js.LICENSE"
+    "main.css": "/react-project2/react-app/static/css/main.a0cc64f8.chunk.css",
+    "main.js": "/react-project2/react-app/static/js/main.95842cb2.chunk.js",
+    "main.js.map": "/react-project2/react-app/static/js/main.95842cb2.chunk.js.map",
+    "runtime-main.js": "/react-project2/react-app/static/js/runtime-main.34fa2955.js",
+    "runtime-main.js.map": "/react-project2/react-app/static/js/runtime-main.34fa2955.js.map",
+    "static/js/2.29e3f1dc.chunk.js": "/react-project2/react-app/static/js/2.29e3f1dc.chunk.js",
+    "static/js/2.29e3f1dc.chunk.js.map": "/react-project2/react-app/static/js/2.29e3f1dc.chunk.js.map",
+    "index.html": "/react-project2/react-app/index.html",
+    "precache-manifest.a3a6f709862599f85b7b576d3f05e04d.js": "/react-project2/react-app/precache-manifest.a3a6f709862599f85b7b576d3f05e04d.js",
+    "service-worker.js": "/react-project2/react-app/service-worker.js",
+    "static/css/main.a0cc64f8.chunk.css.map": "/react-project2/react-app/static/css/main.a0cc64f8.chunk.css.map",
+    "static/js/2.29e3f1dc.chunk.js.LICENSE": "/react-project2/react-app/static/js/2.29e3f1dc.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.81bff5ca.js",
+    "static/js/runtime-main.34fa2955.js",
     "static/js/2.29e3f1dc.chunk.js",
     "static/css/main.a0cc64f8.chunk.css",
     "static/js/main.95842cb2.chunk.js"
